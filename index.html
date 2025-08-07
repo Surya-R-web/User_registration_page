@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REGISTER</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <form id="registerForm">
+      <h2>REGISTER</h2>
+
+      <label>Full Name:</label>
+      <input type="text" id="fullname" required />
+
+      <label>Email:</label>
+      <input type="email" id="email" required />
+
+      <label>Password:</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" required />
+        <span class="toggle-eye" onclick="toggleVisibility('password')">👁️</span>
+      </div>
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
